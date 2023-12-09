@@ -2,7 +2,17 @@ import React from "react"
 import clsx from "clsx";
 import styles from "./FractionUnit.module.css";
 
-const containerProps = [];
+const containerProps = [
+    styles.twoFractionColumnContainer,
+    styles.twoFractionRowContainer,
+    styles.oneTwoFractionColumnContainer,
+    styles.oneThreeFractionColumnContainer,
+    styles.oneFourFractionColumnContainer,
+    styles.fixedWidthFractionColumnContainer,
+    styles.percentageWidthFractionColumnContainer,
+    styles.fixedWidthOneTwoFractionColumnContainer,
+    styles.fixedWidthAnyFractionColumnContainer
+];
 
 const getPropName = (className) => {
     return Object.keys(styles).find(key => styles[key] === className);

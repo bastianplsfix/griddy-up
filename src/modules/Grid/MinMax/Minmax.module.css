@@ -1,0 +1,41 @@
+.container {
+    display: grid;
+    background-color: #333;
+    font-size: 32px;
+}
+
+.item {
+    width: 100%;
+    background-color: indianred;
+    border: 2px solid #000;
+}
+
+.fixedMinmaxColumnContainer {
+    grid-template-columns: minmax(200px, 400px) 100px;
+}
+
+.fixedMinmaxRowContainer {
+    height: 50vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(200px, 400px) 100px;
+}
+
+.fixedPercentageMinmaxColumnContainer {
+    grid-template-columns: minmax(100px, 50%) 200px;
+}
+
+.fixedFractionMinmaxColumnContainer {
+    grid-template-columns: minmax(150px, 1fr) 100px;
+}
+
+.fixedAutoMinmaxColumnContainer {
+    grid-template-columns: minmax(130px, auto) 100px;
+}
+
+.autoFixedMinmaxColumnContainer {
+    grid-template-columns: minmax(auto, 300px) 100px;
+}
+
+.multipleMinmaxColumnContainer {
+    grid-template-columns: minmax(200px, 1fr) minmax(100px, 1fr);
+}

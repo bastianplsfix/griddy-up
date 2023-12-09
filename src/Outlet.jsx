@@ -13,25 +13,25 @@ const MinAndMaxContent = React.lazy(() => import("src/modules/Grid/MinAndMaxCont
 const FitContent = React.lazy(() => import("src/modules/Grid/FitContent/index.js").then(module => ({ default: module.FitContent })));
 
 export const $router = createRouter({
-    home: '/',
-    gridContainers: "/grid/containers",
-    gridProperty: "/grid/property",
-    gridTrackSizing: "/grid/track-sizing",
-    gridFractionUnit: "/grid/fraction-unit",
-    gridMinMax: "/grid/minmax",
-    gridMinAndMaxContent: "/grid/min-and-max-content",
-    gridFitContent: "/grid/fit-content",
+    Home: '/',
+    Containers: "/grid/containers",
+    Property: "/grid/property",
+    TrackSizing: "/grid/track-sizing",
+    FractionUnit: "/grid/fraction-unit",
+    Minmax: "/grid/minmax",
+    MinAndMaxContent: "/grid/min-and-max-content",
+    FitContent: "/grid/fit-content",
 });
 
 const RouteToComponent = {
-    home: Home,
-    gridContainers: Containers,
-    gridProperty: Property,
-    gridTrackSizing: TrackSizing,
-    gridFractionUnit: FractionUnit,
-    gridMinMax: Minmax,
-    gridMinAndMaxContent: MinAndMaxContent,
-    gridFitContent: FitContent,
+    Home,
+    Containers,
+    Property,
+    TrackSizing,
+    FractionUnit,
+    Minmax,
+    MinAndMaxContent,
+    FitContent,
 };
 
 export const Outlet = () => {

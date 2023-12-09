@@ -7,6 +7,7 @@ import {TrackSizing} from "./modules/Grid/TrackSizing/index.js";
 import {FractionUnit} from "./modules/Grid/FractionUnit/index.js";
 import {Minmax} from "src/modules/Grid/Minmax/index.js";
 import {MinAndMaxContent} from "src/modules/Grid/MinAndMaxContent/index.js";
+import {FitContent} from "src/modules/Grid/FitContent/index.js";
 
 export const $router = createRouter({
     home: '/',
@@ -16,6 +17,7 @@ export const $router = createRouter({
     gridFractionUnit: "/grid/fraction-unit",
     gridMinMax: "/grid/minmax",
     gridMinAndMaxContent: "/grid/min-and-max-content",
+    gridFitContent: "/grid/fit-content",
 })
 
 export const Outlet = () => {
@@ -35,8 +37,9 @@ export const Outlet = () => {
         return <FractionUnit />
     } else if (page.route === "gridMinMax") {
         return <Minmax />
-    }
-    else if (page.route === "gridMinAndMaxContent") {
+    } else if (page.route === "gridMinAndMaxContent") {
         return <MinAndMaxContent />
+    } else if (page.route === "gridFitContent") {
+        return <FitContent />
     }
 }

@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    background-color: #333;
+}
+
+.item {
+    width: 100%;
+    background-color: indianred;
+    border: 2px solid #000;
+}

@@ -19,6 +19,14 @@ const containerProps = [
     styles.twoVmaxRowContainer,
     styles.twoVminColumnContainer,
     styles.twoVminRowContainer,
+    styles.twoEqualSizeColumnContainer,
+    styles.twoEqualSizeRowContainer,
+    styles.threeEqualSizeColumnContainer,
+    styles.threeEqualSizeRowContainer,
+    styles.fourEqualSizeColumnContainer,
+    styles.fourEqualSizeRowContainer,
+    styles.fixedAutoColumnContainer,
+    styles.fixedOneColumnLargerContainer
 ];
 
 const getPropName = (className) => {

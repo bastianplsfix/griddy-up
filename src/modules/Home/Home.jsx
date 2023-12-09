@@ -6,6 +6,7 @@ export function Home() {
             <li><a href="/grid/track-sizing" tabIndex="0">Grid Track Sizing</a></li>
             <li><a href="/grid/fraction-unit" tabIndex="0">Fraction Unit</a></li>
             <li><a href="/grid/minmax" tabIndex="0">minmax</a></li>
+            <li><a href="/grid/min-and-max-content" tabIndex="0">Min and Max Content</a></li>
         </ul>
     </div>
 }

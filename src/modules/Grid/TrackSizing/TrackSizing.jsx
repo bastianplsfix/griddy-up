@@ -25,6 +25,7 @@ const getPropName = (className) => {
     return Object.keys(styles).find(key => styles[key] === className);
 };
 
+// eslint-disable-next-line react/prop-types
 const Container = ({ className }) => (
     <>
         <h2>{getPropName(className)}</h2>
@@ -43,7 +44,7 @@ export function TrackSizing() {
     const endOfPageRef = React.useRef(null)
     
     React.useEffect(() => {
-        endOfPageRef.current?.scrollIntoView({ behavior: "smooth" });
+        endOfPageRef.current?.scrollIntoView();
     }, []);
     
     return (

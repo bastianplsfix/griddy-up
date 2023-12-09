@@ -11,7 +11,13 @@ const containerProps = [
     styles.fixedWidthFractionColumnContainer,
     styles.percentageWidthFractionColumnContainer,
     styles.fixedWidthOneTwoFractionColumnContainer,
-    styles.fixedWidthAnyFractionColumnContainer
+    styles.fixedWidthAnyFractionColumnContainer,
+    styles.fixedFractionContainer,
+    styles.fixedAutoContainer,
+    styles.twoFractionContainer,
+    styles.twoAutoContainer,
+    styles.autoFractionContainer,
+    styles.autoFractionAutoContainer,
 ];
 
 const getPropName = (className) => {

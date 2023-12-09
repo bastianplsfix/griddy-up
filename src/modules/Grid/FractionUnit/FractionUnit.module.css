@@ -47,3 +47,26 @@
 .fixedWidthAnyFractionColumnContainer {
     grid-template-columns: 100px 10000fr;
 }
+
+
+/* ============ Fixed vs Auto =========== */
+
+
+.fixedFractionContainer {
+    grid-template-columns: 200px 1fr;
+}
+.fixedAutoContainer {
+    grid-template-columns: 200px auto;
+}
+.twoFractionContainer {
+    grid-template-columns: 1fr 1fr;
+}
+.twoAutoContainer {
+    grid-template-columns: auto auto;
+}
+.autoFractionContainer {
+    grid-template-columns: auto 1fr;
+}
+.autoFractionAutoContainer {
+    grid-template-columns: auto 1fr auto;
+}

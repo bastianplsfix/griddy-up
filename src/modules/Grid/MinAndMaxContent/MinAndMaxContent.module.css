@@ -1,11 +1,30 @@
 .container {
     display: grid;
     background-color: #333;
-    font-size: 32px;
 }
 
 .item {
     width: 100%;
     background-color: indianred;
     border: 2px solid #000;
+}
+
+.minContentContainer {
+    grid-template-columns: min-content 200px;
+}
+
+.minContentMinContentContainer {
+    grid-template-columns: minmax(min-content, min-content) 200px;
+}
+
+.maxContentContainer {
+    grid-template-columns: max-content 200px;
+}
+
+.maxContentMaxContentContainer {
+    grid-template-columns: minmax(max-content, max-content) 200px;
+}
+
+.minmaxContentContainer {
+    grid-template-columns: minmax(min-content, max-content) 200px;
 }

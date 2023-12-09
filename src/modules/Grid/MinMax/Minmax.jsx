@@ -9,7 +9,14 @@ const containerProps = [
     styles.fixedFractionMinmaxColumnContainer,
     styles.fixedAutoMinmaxColumnContainer,
     styles.autoFixedMinmaxColumnContainer,
-    styles.multipleMinmaxColumnContainer
+    styles.multipleMinmaxColumnContainer,
+    styles.percentageFixedMinmaxContainer,
+    styles.viewportFixedMinmaxContainer,
+    styles.emFixedMinmaxContainer,
+    styles.remFixedMinmaxContainer,
+    styles.fractionFixedMinmaxContainer,
+    styles.twoFractionsContainer,
+    styles.innerMinmaxContainer,
 ];
 
 const getPropName = (className) => {

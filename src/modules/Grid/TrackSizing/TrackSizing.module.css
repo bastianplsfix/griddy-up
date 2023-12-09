@@ -1,0 +1,88 @@
+.container {
+    display: grid;
+    background-color: #333;
+    font-size: 32px;
+}
+
+.item {
+    width: 100%;
+    background-color: indianred;
+    border: 2px solid #000;
+}
+
+.twoFixedColumnContainer {
+    grid-template-columns: 200px 300px;
+}
+
+.twoFixedRowContainer {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 200px;
+}
+
+.twoPercentageColumnContainer {
+    grid-template-columns: 40% 50%;
+}
+
+.twoPercentageRowContainer {
+    height: 600px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 30% 50%;
+}
+
+.twoEmColumnContainer {
+    grid-template-columns: 10em 5em;
+}
+
+.twoEmRowContainer {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 5em 6em;
+}
+
+.twoRemColumnContainer {
+    grid-template-columns: 10rem 20rem;
+}
+
+.twoRemRowContainer {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 8rem 12rem;
+}
+
+.twoVwColumnContainer {
+    grid-template-columns: 10vw 30vw;
+}
+
+.twoVwRowContainer {
+    height: 50vw;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 10vw 30vw;
+}
+
+.twoVhColumnContainer {
+    grid-template-columns: 10vh 30vh;
+}
+
+.twoVhRowContainer {
+    height: 50vw;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 10vh 30vh;
+}
+
+.twoVmaxColumnContainer {
+    grid-template-columns: 10vmax 30vmax;
+}
+
+.twoVmaxRowContainer {
+    height: 50vmax;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 10vmax 30vmax;
+}
+
+.twoVminColumnContainer {
+    grid-template-columns: 10vmin 30vmin;
+}
+
+.twoVminRowContainer {
+    height: 50vmin;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 10vmin 30vmin;
+}

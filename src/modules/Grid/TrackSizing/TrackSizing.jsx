@@ -1,0 +1,57 @@
+import React from "react"
+import clsx from "clsx";
+import styles from "./TrackSizing.module.css";
+
+const containerProps = [
+    styles.twoFixedColumnContainer,
+    styles.twoFixedRowContainer,
+    styles.twoPercentageColumnContainer,
+    styles.twoPercentageRowContainer,
+    styles.twoEmColumnContainer,
+    styles.twoEmRowContainer,
+    styles.twoRemColumnContainer,
+    styles.twoRemRowContainer,
+    styles.twoVwColumnContainer,
+    styles.twoVwRowContainer,
+    styles.twoVhColumnContainer,
+    styles.twoVhRowContainer,
+    styles.twoVmaxColumnContainer,
+    styles.twoVmaxRowContainer,
+    styles.twoVminColumnContainer,
+    styles.twoVminRowContainer,
+];
+
+const getPropName = (className) => {
+    return Object.keys(styles).find(key => styles[key] === className);
+};
+
+const Container = ({ className }) => (
+    <>
+        <h2>{getPropName(className)}</h2>
+        <div className={clsx(styles.container, className)}>
+            {['1', '2', '3', '4'].map((item, index) => (
+                <div key={index} className={styles.item}>
+                    {item}
+                </div>
+            ))}
+        </div>
+        <br />
+    </>
+);
+
+export function TrackSizing() {
+    const endOfPageRef = React.useRef(null)
+    
+    React.useEffect(() => {
+        endOfPageRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, []);
+    
+    return (
+        <>
+            {containerProps.map((props, index) => (
+                <Container key={index} className={props}/>
+            ))}
+            <div ref={endOfPageRef} />
+        </>
+    );
+}

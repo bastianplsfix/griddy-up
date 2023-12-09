@@ -1,0 +1,49 @@
+.container {
+    display: grid;
+    background-color: #333;
+}
+
+.inlineContainer {
+    display: inline-grid;
+}
+
+.item {
+    width: 100%;
+    background-color: indianred;
+    border: 2px solid #000;
+}
+
+
+.twoColumnContainer {
+    grid-template-columns: 200px 200px;
+}
+
+.justRowsContainer {
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+.twoByTwoContainer {
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 100px 100px;
+}
+
+
+.fourByOneContainer {
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 100px;
+}
+
+.justColumnsContainer {
+    grid-template-columns: 200px 200px 200px 200px;
+}
+
+.unnecessaryColumnsContainer {
+    grid-template-columns: 200px 200px 200px 200px 200px;
+}
+
+.unnecessaryRowsContainer {
+    height: 500px;
+    margin-bottom: 150px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+}

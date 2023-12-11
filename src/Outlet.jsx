@@ -15,6 +15,7 @@ const Repeat = React.lazy(() => import("src/modules/Grid/Repeat/index.js").then(
 const Gaps = React.lazy(() => import("src/modules/Grid/Gaps/index.js").then(module => ({ default: module.Gaps })));
 const Nested = React.lazy(() => import("src/modules/Grid/Nested/index.js").then(module => ({ default: module.Nested })));
 const Reordering = React.lazy(() => import("src/modules/Grid/Reordering/index.js").then(module => ({ default: module.Reordering })));
+const MovingItems = React.lazy(() => import("src/modules/Grid/MovingItems/index.js").then(module => ({ default: module.MovingItems })));
 
 export const $router = createRouter({
     Home: '/',
@@ -29,6 +30,7 @@ export const $router = createRouter({
     Gaps: "/grid/gaps",
     Nested: "/grid/nested",
     Reordering: "/grid/reordering-grid-items",
+    MovingItems: "/grid/Moving-grid-items",
 });
 
 const RouteToComponent = {
@@ -44,6 +46,7 @@ const RouteToComponent = {
     Gaps,
     Nested,
     Reordering,
+    MovingItems,
 };
 
 export const Outlet = () => {

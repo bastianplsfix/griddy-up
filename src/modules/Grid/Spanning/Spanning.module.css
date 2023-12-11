@@ -12,17 +12,17 @@
 }
 
 .itemOneToSpan3ColumnsContainer > .item:first-of-type {
-    grid-column-start: 1;
+    grid-column-start: 1; /* span 3 */
     grid-column-end: 4;
 }
 .itemOneToSpan2RowsContainer > .item:first-of-type {
-    grid-row-start: 1;
+    grid-row-start: 1; /* span 2 */
     grid-row-end: 3;
 }
 .itemOneToSpan2RowsAnd3ColumnsContainer > .item:first-of-type {
-    grid-column-start: 1;
+    grid-column-start: 1; /* span 3 */
     grid-column-end: 4;
-    grid-row-start: 1;
+    grid-row-start: 1; /* span 2 */
     grid-row-end: 3;
 }
 .lastItemToSpan3ColumnsContainer,
@@ -32,24 +32,24 @@
 }
 
 .lastItemToSpan4ColumnsContainer > .item:last-of-type {
-    grid-column-start: 1;
+    grid-column-start: 1; /* span 4 */
     grid-column-end: 5;
 }
 
 .itemFourToSpan3RowsContainer > .item:nth-of-type(4) {
-    grid-row-start: 1;
+    grid-row-start: 1; /* span 3 */
     grid-row-end: 4;
     grid-column-start: 4;
 }
 
 .itemSixToFromFirstColumnToThirdColumn > .item:nth-of-type(6) {
-    grid-column-start: 1;
+    grid-column-start: 1; /* span 2 */
     grid-column-end: 3;
 }
 
 .lastItemCol1ToCol3AndRow1ToRow3Container {
-    grid-column-start: 1;
+    grid-column-start: 1; /* span 3 */
     grid-column-end: 4;
-    grid-row-start: 1;
+    grid-row-start: 1; /* span 3 */
     grid-row-end: 4;
 }

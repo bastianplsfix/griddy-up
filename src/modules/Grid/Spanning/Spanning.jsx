@@ -3,27 +3,13 @@ import clsx from "clsx";
 import styles from "./Spanning.module.css";
 
 const containerProps = [
-    styles.itemOneToSecondColumnContainer,
-    styles.itemOneToThirdColumnContainer,
-    styles.itemOneToFourthColumnContainer,
-    styles.itemThreeToFirstColumnContainer,
-    styles.itemFourToSecondColumnContainer,
-    styles.itemOneToLastColumnUsingNegatives,
-    styles.itemTwoToFirstPlaceUsingNegatives,
-    styles.itemOneToFourthColumnContainer,
-    styles.itemOneToLastRowContainer,
-    styles.itemSevenToFirstRowContainer,
-    styles.itemThreeToSecondRowContainer,
-    styles.itemSixToFirstRowContainer,
-    styles.itemMultipleItemsToLastRow,
-    styles.itemMultipleItemsToFirstRow,
-    styles.itemMultipleItemsToFirstRowReordered,
-    styles.itemThreeToEmptyCellContainer,
-    styles.itemSevenMovesItemTwoContainer,
-    styles.itemSevenOverlapsTwoContainer,
-    styles.itemOneAndFourSwapContainer,
-    styles.allItemsDefaultPositionContainer,
-    styles.positionAlwaysOverwritesOrder
+    styles.itemOneToSpan3ColumnsContainer,
+    styles.itemOneToSpan2RowsContainer,
+    styles.itemOneToSpan2RowsAnd3ColumnsContainer,
+    styles.lastItemToSpan4ColumnsContainer,
+    styles.itemFourToSpan3RowsContainer,
+    styles.itemSixToFromFirstColumnToThirdColumn,
+    styles.lastItemCol1ToCol3AndRow1ToRow3Container
 ];
 
 const getPropName = (className) => {

@@ -10,6 +10,7 @@ export function Home() {
             <li><a href="/grid/fit-content" tabIndex="0">Fit-content</a></li>
             <li><a href="/grid/repeat" tabIndex="0">Repeat</a></li>
             <li><a href="/grid/gaps" tabIndex="0">Grid Gaps</a></li>
+            <li><a href="/grid/nested" tabIndex="0">Nested Grid</a></li>
         </ul>
     </div>
 }

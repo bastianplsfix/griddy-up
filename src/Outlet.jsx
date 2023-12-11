@@ -13,6 +13,7 @@ const MinAndMaxContent = React.lazy(() => import("src/modules/Grid/MinAndMaxCont
 const FitContent = React.lazy(() => import("src/modules/Grid/FitContent/index.js").then(module => ({ default: module.FitContent })));
 const Repeat = React.lazy(() => import("src/modules/Grid/Repeat/index.js").then(module => ({ default: module.Repeat })));
 const Gaps = React.lazy(() => import("src/modules/Grid/Gaps/index.js").then(module => ({ default: module.Gaps })));
+const Nested = React.lazy(() => import("src/modules/Grid/Nested/index.js").then(module => ({ default: module.Nested })));
 
 export const $router = createRouter({
     Home: '/',
@@ -25,6 +26,7 @@ export const $router = createRouter({
     FitContent: "/grid/fit-content",
     Repeat: "/grid/repeat",
     Gaps: "/grid/gaps",
+    Nested: "/grid/nested",
 });
 
 const RouteToComponent = {
@@ -37,7 +39,8 @@ const RouteToComponent = {
     MinAndMaxContent,
     FitContent,
     Repeat,
-    Gaps
+    Gaps,
+    Nested,
 };
 
 export const Outlet = () => {

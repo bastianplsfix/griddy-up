@@ -1,0 +1,71 @@
+.container {
+    display: grid;
+    background-color: #333;
+}
+
+.item {
+    width: 100%;
+    background-color: indianred;
+    border: 2px solid #000;
+}
+
+.firstNameToThirdColumnContainer {
+    grid-template-columns: 1fr 1fr [thirdColumn] 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+}
+
+.firstNameToThirdColumnContainer > .item:first-of-type {
+    grid-column-start: thirdColumn;
+}
+
+.thirdItemToFirstColumnContainer {
+    grid-template-columns: 1fr [secondColumn] repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.thirdItemToFirstColumnContainer > .item:nth-of-type(3) {
+    grid-column-end: secondColumn;
+}
+
+.thirdItemToFirstRowContainer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px [thirdRow] 100px;
+}
+
+.thirdItemToFirstRowContainer > .item:nth-of-type(3) {
+    grid-row-start: thirdRow;
+}
+
+.firstItemToBottomRightCellContainer {
+    grid-template-columns: 1fr 1fr 1fr [fourth] 1fr;
+    grid-template-rows: 100px 100px [third] 100px;
+}
+
+.firstItemToBottomRightCellContainer >.item:first-of-type {
+    grid-column-start: fourth;
+    grid-row-start: third;
+}
+
+.firstItemCol1ToCol2Container {
+    grid-template-columns: [line1] 1fr 1fr [line3] 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+}
+
+.firstItemCol1ToCol2Container > .item:first-of-type {
+    grid-column-start: line1;
+    grid-column-end: line3;
+}
+
+.multipleLineNamesColumnsContainer {
+    grid-template-columns: [line1-start] 1fr [line2-start] 1fr [line2-end line3] 1fr;
+    grid-template-rows: repeat(4, 100px);
+}
+
+.multipleLineNamesColumnsContainer > .item:last-of-type {
+    grid-column-start: line1-start;
+    grid-column-end: line3;
+}
+.multipleLineNamesColumnsContainer > .item:last-of-type {
+    grid-column-start: linel-start;
+    grid-column-end: line2-end;
+}

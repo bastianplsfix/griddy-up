@@ -17,6 +17,7 @@ const Nested = React.lazy(() => import("src/modules/Grid/Nested/index.js").then(
 const Reordering = React.lazy(() => import("src/modules/Grid/Reordering/index.js").then(module => ({ default: module.Reordering })));
 const MovingItems = React.lazy(() => import("src/modules/Grid/MovingItems/index.js").then(module => ({ default: module.MovingItems })));
 const Spanning = React.lazy(() => import("src/modules/Grid/Spanning/index.js").then(module => ({ default: module.Spanning })));
+const LineNames = React.lazy(() => import("src/modules/Grid/LineNames/index.js").then(module => ({ default: module.LineNames })));
 
 export const $router = createRouter({
     Home: '/',
@@ -33,6 +34,7 @@ export const $router = createRouter({
     Reordering: "/grid/reordering-grid-items",
     MovingItems: "/grid/moving-grid-items",
     Spanning: "/grid/grid-spanning",
+    LineNames: "/grid/grid-line-names",
 });
 
 const RouteToComponent = {
@@ -50,6 +52,7 @@ const RouteToComponent = {
     Reordering,
     MovingItems,
     Spanning,
+    LineNames,
 };
 
 export const Outlet = () => {

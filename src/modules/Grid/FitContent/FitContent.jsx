@@ -3,7 +3,11 @@ import clsx from "clsx";
 import styles from "./FitContent.module.css";
 
 const containerProps = [
-    
+    styles.minContentPixelMinmaxContainer,
+    styles.fixedFitContentContainer,
+    styles.percentageFitContentContainer,
+    styles.autoFitContentContainer,
+    styles.fractionFitContentContainer
 ];
 
 const getPropName = (className) => {
@@ -15,7 +19,7 @@ const Container = ({ className }) => (
     <>
         <h2>{getPropName(className)}</h2>
         <div className={clsx(styles.container, className)}>
-            {["CSS Grids is a powerful layout system that allows developers to create responsive and flexible web designs by dividing the page into rows and columns.", ""].map((item, index) => (
+            {["CSS Grids is a powerful layout system.", "2"].map((item, index) => (
                 <div key={index} className={styles.item}>
                     {item}
                 </div>

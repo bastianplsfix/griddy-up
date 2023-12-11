@@ -8,3 +8,20 @@
     background-color: indianred;
     border: 2px solid #000;
 }
+
+
+.minContentPixelMinmaxContainer {
+    grid-template-columns: minmax(min-content, 300px) 1fr;
+}
+.fixedFitContentContainer {
+    grid-template-columns: fit-content(300px) 1fr;
+}
+.percentageFitContentContainer {
+    grid-template-columns: fit-content(20%) 1fr;
+}
+.autoFitContentContainer {
+    grid-template-columns: fit-content(auto) 1fr;
+}
+.fractionFitContentContainer {
+    grid-template-columns: fit-content(1fr) 1fr;
+}

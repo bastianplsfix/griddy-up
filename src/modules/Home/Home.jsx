@@ -11,6 +11,7 @@ export function Home() {
             <li><a href="/grid/repeat" tabIndex="0">Repeat</a></li>
             <li><a href="/grid/gaps" tabIndex="0">Grid Gaps</a></li>
             <li><a href="/grid/nested" tabIndex="0">Nested Grid</a></li>
+            <li><a href="/grid/reordering-grid-items" tabIndex="0">Reordering Grid Items</a></li>
         </ul>
     </div>
 }

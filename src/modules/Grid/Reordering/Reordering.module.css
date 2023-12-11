@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    background-color: #333;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item {
+    width: 100%;
+    background-color: indianred;
+    border: 2px solid #000;
+}
+
+.defaultContainer > .item:nth-of-type(3) {
+    order: 0;
+}
+.itemOneToLastSpotContainer > .item:first-of-type {
+    order: 1;
+}
+.lastItemToFirstSpotContainer > .item:last-of-type {
+    order: -1;
+}
+.allEvenItemsFirstContainer > .item:nth-of-type(even) {
+    order: -1;
+}
+.jumbledContainer > .item:first-of-type {
+    order: 0;
+}
+.jumbledContainer > .item:nth-of-type(2) {
+    order: -1;
+}
+.jumbledContainer > .item:nth-of-type(2) {
+    order: 2;
+}
+.jumbledContainer > .item:last-of-type {
+    order: -2;
+}

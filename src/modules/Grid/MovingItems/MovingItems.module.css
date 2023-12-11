@@ -73,3 +73,64 @@
 .itemMultipleItemsToFirstRowReordered > .item:first-of-type {
     order: -2;
 }
+
+.itemThreeToEmptyCellContainer,
+.itemOneAndFourSwapContainer {
+    grid-template-rows: repeat(3, 100px);
+}
+
+.itemThreeToEmptyCellContainer > .item:nth-of-type(3) {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+.itemSevenMovesItemTwoContainer > .item:nth-of-type(7) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.itemSevenOverlapsTwoContainer > .item:nth-of-type(2),
+.itemSevenOverlapsTwoContainer > .item:nth-of-type(7) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.itemSevenOverlapsTwoContainer > .item:nth-of-type(2) {
+    z-index: 1;
+}
+
+.itemOneAndFourSwapContainer > .item:first-of-type {
+    grid-column-start: 4;
+}
+
+.itemOneAndFourSwapContainer > .item:nth-of-type(4) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.allItemsDefaultPositionContainer > .item:nth-of-type(3) {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+.allItemsDefaultPositionContainer > .item:nth-of-type(5) {
+    grid-column-end: 3;
+    grid-row-end: 2;
+}
+
+/** RESET BY TARGET SAME ITEMS */
+.allItemsDefaultPositionContainer > .item:nth-of-type(3),
+.allItemsDefaultPositionContainer > .item:nth-of-type(5) {
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
+}
+
+.positionAlwaysOverwritesOrder > .item:last-of-type {
+    grid-column-start: 1;
+    grid-row-start: 1
+}
+.positionAlwaysOverwritesOrder > .item:nth-of-type(7) {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.positionAlwaysOverwritesOrder > .item:first-of-type {
+    order: -3;
+}

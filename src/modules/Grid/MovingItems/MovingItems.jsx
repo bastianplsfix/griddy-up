@@ -17,7 +17,13 @@ const containerProps = [
     styles.itemSixToFirstRowContainer,
     styles.itemMultipleItemsToLastRow,
     styles.itemMultipleItemsToFirstRow,
-    styles.itemMultipleItemsToFirstRowReordered
+    styles.itemMultipleItemsToFirstRowReordered,
+    styles.itemThreeToEmptyCellContainer,
+    styles.itemSevenMovesItemTwoContainer,
+    styles.itemSevenOverlapsTwoContainer,
+    styles.itemOneAndFourSwapContainer,
+    styles.allItemsDefaultPositionContainer,
+    styles.positionAlwaysOverwritesOrder
 ];
 
 const getPropName = (className) => {

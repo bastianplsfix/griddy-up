@@ -11,6 +11,7 @@ const FractionUnit = React.lazy(() => import("./modules/Grid/FractionUnit/index.
 const Minmax = React.lazy(() => import("src/modules/Grid/Minmax/index.js").then(module => ({ default: module.Minmax })));
 const MinAndMaxContent = React.lazy(() => import("src/modules/Grid/MinAndMaxContent/index.js").then(module => ({ default: module.MinAndMaxContent })));
 const FitContent = React.lazy(() => import("src/modules/Grid/FitContent/index.js").then(module => ({ default: module.FitContent })));
+const Repeat = React.lazy(() => import("src/modules/Grid/Repeat/index.js").then(module => ({ default: module.Repeat })));
 
 export const $router = createRouter({
     Home: '/',
@@ -21,6 +22,7 @@ export const $router = createRouter({
     Minmax: "/grid/minmax",
     MinAndMaxContent: "/grid/min-and-max-content",
     FitContent: "/grid/fit-content",
+    Repeat: "/grid/repeat",
 });
 
 const RouteToComponent = {
@@ -32,6 +34,7 @@ const RouteToComponent = {
     Minmax,
     MinAndMaxContent,
     FitContent,
+    Repeat,
 };
 
 export const Outlet = () => {

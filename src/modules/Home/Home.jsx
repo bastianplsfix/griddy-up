@@ -8,6 +8,7 @@ export function Home() {
             <li><a href="/grid/minmax" tabIndex="0">minmax</a></li>
             <li><a href="/grid/min-and-max-content" tabIndex="0">Min and Max Content</a></li>
             <li><a href="/grid/fit-content" tabIndex="0">Fit-content</a></li>
+            <li><a href="/grid/repeat" tabIndex="0">Repeat</a></li>
         </ul>
     </div>
 }

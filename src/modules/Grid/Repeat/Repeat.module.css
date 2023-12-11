@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    background-color: #333;
+}
+
+.item {
+    width: 100%;
+    background-color: indianred;
+    border: 2px solid #000;
+}
+
+
+.repeatFixedContainer {
+    grid-template-columns: repeat(2, 200px);
+}
+
+.repeatPercentageContainer {
+    grid-template-columns: repeat(3, 10%);
+}
+
+.repeatFractionContainer {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.repeatMinmaxContainer {
+    grid-template-columns: repeat(3, minmax(20px, 100px));
+}
+
+.repeatMultipleColumnsContainer {
+    grid-template-columns: repeat(2, 200px 1fr 200px);
+}
+
+.bothSetAndRepeatColumnsContainer {
+    grid-template-columns: 200px repeat(2, 1fr) 200px;
+}

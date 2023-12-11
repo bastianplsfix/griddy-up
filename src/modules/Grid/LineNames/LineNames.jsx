@@ -8,7 +8,8 @@ const containerProps = [
     styles.thirdItemToFirstRowContainer,
     styles.firstItemToBottomRightCellContainer,
     styles.firstItemCol1ToCol2Container,
-    styles.multipleLineNamesColumnsContainer
+    styles.multipleLineNamesColumnsContainer,
+    styles.repeatLineNameContainer
 ];
 
 const getPropName = (className) => {
